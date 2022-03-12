@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charles babbage</title>
+    <script src="https://kit.fontawesome.com/3f21023fe6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>charles babbage</h1>
+    <main>
+        <ul>
+            <li><a href="/">Volver al inico</a></li>  
+        </ul>
+        <img src="/images/babbage.jpg" alt="">
+        <h2>Historia</h2>
+       <p>Charles Babbage, conocido por muchos como “El Padre de la computación”, nació según algunas fuentes en Teignmouth (provincia de Devonshire, Reino Unido), el 26 de diciembre 1791, aunque según otras nació en el 44 de Crosby Row, Walworth Road (Londres, Reino Unido). Era hijo de Benjamin Babbage y Betsy Plumleigh Teape. Su padre era un rico banquero que le dio acceso a la educación en las escuelas privadas más prestigiosas de la época, de las que cabe destacar el Trinity College en Cambridge.</p>
+       <p>Babbage destacó sobre todo por su interés en los dispositivos mecánicos. Dicho interés le hizo aprender matemáticas de forma autodidactica leyendo cualquier libro que le llegaba a las manos.</p>
+       <p>En 1810 llegó a la universidad de Cambridge, no sin antes haberse formado con la ayuda de un profesor privado proveniente de la universidad de Oxford.</p>
+       <p>Un par de años después de entrar en Cambridge formó la Sociedad Analítica junto con otros alumnos de Cambridge y en 1816 entró a formar parte de la Real Sociedad de Matemáticas de Londres.</p>
+       <p>En 1814 se casó con Georgiana Whitmore en St. Michael’s Church, Teignmouth. Con la que llegó a tener 8 hijos de los cuales solo 4 llegaron a edad adulta.</p>
+       <p>Durante las primeras reuniones con la Sociedad Analítica ideó un dispositivo que más tarde se convertiría en la máquina en diferencias, en la cual empezó a trabajar 1819 y tras obtener un motor en diferencias funcional en 1822 y ganar una medalla honorífica de la Sociedad de Astronomía de Londres, consiguió una subvención para completar lo que hoy conocemos como su máquina en diferencias. Aunque en un primer momento pensó que podía terminarla en 3 años tuvo que parar en 1834 por falta de fondos, año en el que empezó a pensar en construir su máquina analítica.</p>
+       <p>Durante el transcurso del verano de 1827 murió, a la edad de 35 años, su esposa Georgiana. Además, fue un año duro para Babbage pues también murió su padre y dos de sus hijos. Motivo por el cual decidió darse un año de descanso y viajar por el continente Europeo.</p>
+       <p>A principio de los 1840 Babbage dio una conferencia en Turín a Federico Luigi, Conde de Menabrea, acerca de su máquina analítica publicando después las notas tomadas. Tiempo después Ada Byron se encargó de traducir la publicación de Luigi añadiendo anotaciones propias, entre ellas programas que harían a la máquina poder ejecutar cálculos más complejos como por ejemplo los números de Bernoulli. Es por esto que Ada Byron, hoy en día más conocida como Lady Ada Lovelace, es considerada la primera programadora de la historia. Babbage quedó tan impresionado con el entendimiento de Byron acerca de su máquina, que fue su tutor y más tarde trabajaron juntos hasta tal punto que este le reconoció su talento apodándola “ La Encantadora de Números”.</p>
+       <p>Babbage murió solo a la edad de 79 años, el 18 de octubre de 1871. La autopsia reveló que la muerte fue debida a una insuficiencia renal causada por cistitis. Ninguno de sus hijos estuvo con él el día de su muerte pues estos habían emigrado. Fue enterrado en el cementerio de Kensal Green, Londres.</p>
+       <h3>Maquina Diferencial</h3>
+       <p>Pese a que esta máquina es conocida por Babbage, la primera idea al respecto proviene de una publicación olvidada de J. H. Müller en el año 1786, pero no fue hasta 1822, cuando Charles enseñó su idea a la Sociedad de Astronomía que la idea tomó fuerza.
+       </p>
+       <p>La máquina estaba pensada para operar tabulando funciones polinómicas, usando notación decimal y siendo accionada por una manivela.</p>
+       <p>El funcionamiento consiste en un número determinado de columnas cilíndricas numeradas, donde cada una de dichas columnas almacena un número decimal. La única operación de la que es capaz es sumar la columna n+1 a la n para obtener el nuevo valor de esta. La primera columna muestra el valor del cálculo en la iteración en la que se encuentra el cálculo.</p>
+       <p>La máquina se programa ajustando los valores iniciales de las columnas a los deseados. La columna 1 se fija al valor del polinomio al comienzo del cómputo. La columna 2 se fija a un valor derivado de la primera. Cada una de las columnas entre 3 y N se fija a un valor derivado de (n- 1) y las derivadas más altas del polinomio.</p>
+       <p>Como a esta máquina le resulta imposible multiplicar no puede calcular el valor de un polinomio directamente, sin embargo si el valor inicial del polinomio es calculado por algunos medios para un cierto valor de X, se puede calcular cualquier número de valores próximos usando el método conocido generalmente como el Método de las Diferencias Finitas.</p>
+       <p>Para observar cómo funciona la idea de emplear las diferencias para los cálculos, emplearemos un ejemplo de polinomio cuadrático (p(x) = 2×2 – 3x + 2).</p>
+       <img src="/images/numeros babbage.png" alt="">
+       <p>Hay que observar que en la tercera columna no es coincidencia que todos los valores sean iguales, de hecho es en esta propiedad en la que se basa el método de funcionamiento de la máquina. Va calculando internamente los valores de la tabla y se puede continuar calculando mientras la máquina sea capaz de mantener los dígitos y no desborde.</p>
+       <p>Para programar la máquina habría que poner en la primera columna el valor de la función al comienzo del cómputo f(0), en la segunda la diferencia entre f(1) y f(0) así sucesivamente.</p>
+       <p>Debido a problemas con el ingeniero jefe y con la eliminación de las subvenciones, Babbage tuvo que abandonar el proyecto en 1834 y entre octubre 1846 y marzo de 1849 empezó a diseñar una nueva máquina de diferencias mejorada aplicando lo que había aprendido del diseño de las dos previas. Este nuevo diseño solo necesitaba 8000 piezas, tres veces menos que la original, pero Babbage no intentó si quiera construirla.</p>
+       <h3>Maquina analítica</h3>
+       <p>Fue descrita por primera vez en 1837 y por entonces ya contaba con unidad aritmética, control de flujo y memoria, además de permitir condiciones y bucles. Fue la primera máquina que tuvo un diseño Turing-completo que se conoce.</p>
+       <p>Después de diseñar la máquina de diferencias, se dio cuenta de que se podía construir una máquina que hiciera cálculos un poco más generales. Pensó en dotar a la máquina de una entrada en la que las instrucciones a “ ejecutar”fueran introducidas mediante tarjetas perforadas como ya se habían empezado a usar en las tejedoras mecánicas de la época para introducir los patrones. Y una salida compuesta por una impresora, un trazador de curvas y una campana. Además la máquina es capaz de generar tarjetas perforadas con números para ser reutilizadas posteriormente por ella misma, todo ello empleando aritmética en base 10.</p>
+       <p>La memoria que se diseñó fue capaz de almacenar 1000 números de 50 dígitos, aproximadamente 20.7kB. La unidad aritmética era capaz de utilizar las cuatro operaciones básicas además de comparaciones y raíces cuadradas. La máquina funciona de manera aproximada a como lo hacen hoy en día las CPU, genera unos datos que se guardan en memoria, que en la máquina estaba formada por tambores en los que se insertaban clavijas. Además si el programador desea usar operaciones complejas puede especificarse.</p>
+       <p>En la entrada de la máquina podemos diferenciar tres tipos distintos de tarjetas: unas para los operadores aritméticos, otra para las constantes y otras para la cargar y guardar operaciones en memoria.</p>
+       <p>Después de diseñar la máquina, Babbage entendió la importancia de optimizar el coste y hacer algoritmos más eficientes. Fue cuando escribió: “ Passages from the Life of a Philosopher”.</p>
+       <p>Debido a incapacidades técnicas y la oposición de la British Association for the Advancement of Science le fue imposible ver su máquina construida.</p>
+       <a href="#">Volver arriba</a>
+    </main>
+    <footer>
+        <section>
+            <h4>Siguenos</h4>
+            <nav>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-spotify"></i></a>
+                <a href=""><i class="fab fa-apple"></i></a>
+                <a href=""><i class="fab fa-amazon"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </nav>
+            <p>Copyright © 1999-2020</p>
+        </section>
+
+    </footer>
+    
+       
+   
+    
+</body>
+</html>
